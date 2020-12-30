@@ -241,6 +241,21 @@
         </div>
 
         <!-------------------------------------------------------------------------------------------->
+        function copiarAlPortapapeles(id_elemento) {
+        var aux = document.createElement("input");
+        aux.setAttribute("value", document.getElementById(id_elemento).innerHTML);
+        document.body.appendChild(aux);
+        aux.select();
+        document.execCommand("copy");
+        document.body.removeChild(aux);
+        }
+        <p id="p1">P1: Soy el primer párrafo</p>
+        <p id="p2">P2: Soy el segundo párrafo</p>
+        <button onclick="copiarAlPortapapeles('p1')">Copiar P1</button>
+        <button onclick="copiarAlPortapapeles('p2')">Copiar P2</button>
+        <br/><br/>
+        <input type="text" placeholder="Pega aquí para probar" />
+        <!-------------------------------------------------------------------------------------------->
      
     <!--Start Text with Centered Image and Table-->
         <div class="flex-row">
@@ -278,6 +293,8 @@
                     <td class="text-center">Indice Normalizado de Area Quemada</td>
                     <td class="text-center">780:1400 1400:3000</td>
                     <td class="text-center">("Band 8a@1" - "Band 11@1") / ("Band 8a@1" + "Band 11@1")</td>
+                      <p id="mi_parrafo">Texto que quiero copiar</p>
+                      <button>Copiar al portapapeles</button>
                     <td class="text-center"><input type="text" value="# Cálculo del NBR
                         nir <- Landsat8$NIR # Infrarojo cercano
                         swir <- Landsat8$SWIR # Infrarojo de onda corta
