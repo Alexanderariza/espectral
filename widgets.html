@@ -280,7 +280,11 @@
                     <td class="text-center"><textarea class="custom-textbox stretch-on-mobile" readonly>("Band 8a@1" - "Band 11@1") / ("Band 8a@1" + "Band 11@1")</textarea></td> 
                     <td class="text-center"><textarea class="custom-textbox stretch-on-mobile" readonly>("Band 8a@1" - "Band 11@1") / ("Band 8a@1" + "Band 11@1")</textarea></td>
                     <td class="text-center"><button id="dialog-btn-2" class="custom-button-flat"><img src="img/setting.png"><span>Durante</span></button></td>
-                    <td class="text-center"><textarea class="custom-textbox stretch-on-mobile" readonly>("Band 8a@1" - "Band 11@1") / ("Band 8a@1" + "Band 11@1")</textarea></td>
+                    <td class="text-center"><textarea class="custom-textbox stretch-on-mobile" readonly>// Calculo del índice NBR con las bandas NIR y SWIR :
+                        var NBR= imagen.normalizedDifference (['B8','B12']) ; 
+                        Map.addLayer (NBR,{  max: 1.0, min: 0.0,
+                        'palette': ['#7F0010', '#D99143', '#C04529', '#E02E20', '#EC6521', '#F6D53B']},
+                        'NBR ');</textarea></td>
                    </tr>
                   <tr class="bg-color-light-gray">
                     <td class="text-center">2</td>
