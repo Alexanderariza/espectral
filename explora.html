@@ -54,14 +54,11 @@
         <!--End Intro-->
         <!-------------------------------------------------------------------------------------------->
         <!-- Codigo usado en este ejemplo -->
-<textarea cols='80' rows='4' id="codigo2">Texto 2 a copiar</textarea><br>
-<button type="button" class="bt1" data-clipboard-target="#codigo2">Copiar texto</button>
-<pre id="codigo3">CONTENIDO</pre>
-<button type="button" class="bt2" data-clipboard-target="#codigo3">Copiar código</button>
-<script>
-  var clipboard2 = new Clipboard('.bt1');
-  var clipboard3 = new Clipboard('.bt2');
-</script>
+<textarea cols='80' rows='4' id="codigo">
+Texto a copiar
+</textarea><br>
+<button type="button" id="copyClip" data-clipboard-target="#codigo">Copiar texto</button>
+<script src="clipboard.min.js"></script>
 
         
         
