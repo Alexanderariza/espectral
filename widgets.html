@@ -282,7 +282,12 @@
                         nir <- Landsat8$NIR # Infrarojo cercano
                         swir <- Landsat8$SWIR # Infrarojo de onda corta
                         ndvi <- (nir-red)/(nir+red) # NBR" name="nombredelacaja"></td>
-                    <td class="text-center"><button id="share-btn" title="Share" class="custom-button-flat"><img src="img/share.png"><span>Share</span></button></td>
+                    <td class="text-center"><button id="codigo-btn" title="Codigo" class="custom-button-flat"><img src="img/share.png"><span>Codigo</span></button></td>
+                       <div id="share-dialog" title="Share" data-role="none">
+                          <p>Copie el siguiente codigo y comparta:</p>
+                          <input id="codigo-url" class="custom-textbox" type="text" autofocus="autofocus" value="("Band 8a@1" - "Band 11@1") / ("Band 8a@1" + "Band 11@1")" readonly>
+                          <p id="codigo-url-copy-prompt">El codigo esta copiado.</p>
+                       </div>
                     <td class="text-center">1,658 (20.4%)</td>
                    </tr>
                   <tr class="bg-color-light-gray">
@@ -366,7 +371,7 @@
             <div id="dialog-1" title="Dialog 1" data-role="none"> 
               <p>No action, attached and centered to the window, full-width button.</p>
             </div> 
-            <div id="dialog-2" title="Durante" data-role="page">
+            <div id="dialog-2" title="Durante" data-role="none">
               <p>With action, attached and centered to the window.</p>
             </div>
             <div id="dialog-3" title="Dialog 3" data-role="none">
