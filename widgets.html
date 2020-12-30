@@ -283,7 +283,6 @@
                         swir <- Landsat8$SWIR # Infrarojo de onda corta
                         ndvi <- (nir-red)/(nir+red) # NBR" name="nombredelacaja"></td>
                     <td class="text-center"><button id="codigo-btn" title="Codigo" class="custom-button-flat"><img src="img/share.png"><span>Codigo</span></button></td>
-
                     <td class="text-center">1,658 (20.4%)</td>
                    </tr>
                   <tr class="bg-color-light-gray">
@@ -345,11 +344,7 @@
           </div>
         </div>
         
-        <div id="codigo-dialog" title="compartir" data-role="none">
-          <p>Copie el siguiente codigo y comparta:</p>
-            <input id="codigo-url" class="custom-textbox" type="text" autofocus="autofocus" value="("Band 8a@1" - "Band 11@1") / ("Band 8a@1" + "Band 11@1")" readonly>
-           <p id="codigo-url-copy-prompt">El codigo esta copiado.</p>
-        </div>
+        
         
         
         <!--End Text with Centered Image and Table-->
@@ -388,6 +383,11 @@
               <p>Copy the following link and share it with others:</p>
               <input id="share-url" class="custom-textbox" type="text" autofocus="autofocus" value="https://yenchiah.github.io/project-website-template/" readonly>
               <p id="share-url-copy-prompt">The share link is copied.</p>
+            </div>
+            <div id="codigo-dialog" title="compartir" data-role="none">
+              <p>Copie el siguiente codigo y comparta:</p>
+              <input id="codigo-url" class="custom-textbox" type="text" autofocus="autofocus" value="("Band 8a@1" - "Band 11@1") / ("Band 8a@1" + "Band 11@1")" readonly>
+              <p id="codigo-url-copy-prompt">El codigo esta copiado.</p>
             </div>
           </div>
         </div>
