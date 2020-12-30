@@ -241,16 +241,6 @@
         </div>
 
         <!-------------------------------------------------------------------------------------------->
-var clipboard = new Clipboard('.btn');
-<script src="https://cdn.rawgit.com/zenorocha/clipboard.js/v1.5.3/dist/clipboard.min.js"></script>
-<!-- Objetivo -->
-<input id="foo" value="Texto a copiar">
-
-<!-- Disparador -->
-<button class="btn" data-clipboard-target="#foo">
-  Copiar al portapapeles
-</button>        
-        <!-------------------------------------------------------------------------------------------->
      
     <!--Start Text with Centered Image and Table-->
         <div class="flex-row">
@@ -288,13 +278,11 @@ var clipboard = new Clipboard('.btn');
                     <td class="text-center">Indice Normalizado de Area Quemada</td>
                     <td class="text-center">780:1400 1400:3000</td>
                     <td class="text-center">("Band 8a@1" - "Band 11@1") / ("Band 8a@1" + "Band 11@1")</td>
-                      <p id="mi_parrafo">Texto que quiero copiar</p>
-                      <button>Copiar al portapapeles</button>
                     <td class="text-center"><input type="text" value="# Cálculo del NBR
                         nir <- Landsat8$NIR # Infrarojo cercano
                         swir <- Landsat8$SWIR # Infrarojo de onda corta
                         ndvi <- (nir-red)/(nir+red) # NBR" name="nombredelacaja"></td>
-                    <td class="text-center"> </td>
+                    <td class="text-center"><button id="share-btn" title="Share" class="custom-button-flat"><img src="img/share.png"><span>Share</span></button></td>
                     <td class="text-center">1,658 (20.4%)</td>
                    </tr>
                   <tr class="bg-color-light-gray">
