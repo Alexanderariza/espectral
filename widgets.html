@@ -412,8 +412,7 @@ plot.show(ndvi, cmap='Greens')</textarea></td>
             <div class="control-group">
               <button id="dialog-btn-1" class="custom-button-flat"><img src="img/book.png"><span><b>NDVI</b></span></button>
               <button id="dialog-btn-2" class="custom-button-flat"><img src="img/download.png"><span>Descarga</span></button>
-              <button id="dialog-btn-3" class="custom-button-flat"><img src="img/setting.png"><span>Dialog 3</span></button>
-              <button id="dialog-btn-4" class="custom-button-flat"><img src="img/python_icon.png"><span>Copia el código</span></button>
+              <button id="dialog-btn-4" class="custom-button-flat"><img src="img/deslizamiento.png"><span>Deslizamientos</span></button>
               <button id="share-btn" title="Share" class="custom-button-flat"><img src="img/share.png"><span>Compartir</span></button>
             </div>
             <div id="dialog-1" title="Referencia" data-role="none"> 
@@ -424,16 +423,13 @@ plot.show(ndvi, cmap='Greens')</textarea></td>
             <div id="dialog-2" title="Descarga Tabla" data-role="none">
               <p>Exporta la información en formato CSV.</p>
             </div>
-            <div id="dialog-3" title="Dialog 3" data-role="none">
-              <p>No action and cancel buttons, attached and centered to the content element.</p>
-            </div>
-            <div id="dialog-4" title="Copia el código" data-role="none">
+            <div id="dialog-4" title="Deslizamientos" data-role="none">
               <input id="dialog-4" class="custom-textbox" type="text" autofocus="autofocus" value="B3/B4" readonly>
-              <p>id="dialog-4-copy-prompt"Copia en el portapapeles el código seleccionado</p>
+              <p id="dialog-4-copy-prompt">Copia en el portapapeles el código seleccionado.</p>
             </div>
-            <div id="share-dialog" title="Comparte" data-role="none">
+            <div id="share-dialog" title="Comparte el codigo" data-role="none">
               <p>Copia el link de ESPECTRA RIDE y comparte con otros:</p>
-              <input id="share-url" class="custom-textbox" type="text" autofocus="autofocus" value="https://alexanderariza.github.io/espectral/widgets.html" readonly>
+              <input id="share-url" class="custom-textbox" type="text" autofocus="autofocus" value="("Band 5a@1" - "Band 4@1") / ("Band 5a@1" + "Band 4@1")" readonly>
               <p id="share-url-copy-prompt">Comparte esta información.</p>
             </div>
           </div>
