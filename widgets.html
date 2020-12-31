@@ -263,8 +263,8 @@
                   <tr class="bg-color-gray">
                     <th class="text-center">ID</th>
                     <th class="text-center">Acronimo</th>
-                    <th class="text-center">Nombre</th>
-                    <th class="text-center">Rango Espectral (nm)</th>
+                    <th class="text-center">Nombre del Índice</th>
+                    <th class="text-center">Banda / Rango Espectral (nm)</th>
                     <th class="text-center">Calculo en QGIS<p><img src="img/qgis_icon.png" width="50"></p></th>
                     <th class="text-center">Calculo en R<p><img src="img/r_icon.png" width="50"></p></th>
                     <th class="text-center">Calculo en Python<p><img src="img/python_icon.png" width="50"></p></th>
@@ -276,7 +276,7 @@
                     <td class="text-center">1</td>
                     <td class="text-center"><b>NBR</b></td>
                     <td class="text-center">Índice Normalizado de Área Quemada</td>
-                    <td class="text-center">780:1400 1400:3000</td>
+                    <td class="text-center">B5 / 780:1400 B11 / 1400:3000</td>
                     <td class="text-center"><textarea class="custom-textbox stretch-on-mobile" style="background-color: #d7f5f7" readonly>("Band 8a@1" - "Band 11@1") / ("Band 8a@1" + "Band 11@1")</textarea></td> 
                     <td class="text-center"><textarea class="custom-textbox stretch-on-mobile" style="background-color: #d7f5f7" readonly># calcule el NBR usando las bandas del nir (band 4) y swir (band 8) 
                         naip_nbr <-(naip_multispectral_br[[4]] - naip_multispectral_br[[8]]) / (naip_multispectral_br[[4]] + naip_multispectral_br[[8]])</textarea></td>
@@ -347,10 +347,11 @@ plot.show(ndvi, cmap='Greens')</textarea></td>
                     <td class="text-center">2</td>
                     <td class="text-center"><b>NDVI</b></td>
                     <td class="text-center">Índice Normalizado de Vegetación</td>
-                    <td class="text-center">665 (8.2%)</td>
-                    <td class="text-center">497 (5.4%)</td>
-                    <td class="text-center">665 (8.2%)</td>
-                    <td class="text-center">497 (5.4%)</td>
+                    <td class="text-center">B4 / 640:670 B5 / 780:1400</td>
+                    <td class="text-center"><textarea class="custom-textbox stretch-on-mobile" style="background-color: #d7f5f7" readonly>("Band 5a@1" - "Band 4@1") / ("Band 5a@1" + "Band 4@1")</textarea></td> 
+                    <td class="text-center"><textarea class="custom-textbox stretch-on-mobile" style="background-color: #d7f5f7" readonly>("Band 5a@1" - "Band 4@1") / ("Band 5a@1" + "Band 4@1")</textarea></td> 
+                    <td class="text-center"><textarea class="custom-textbox stretch-on-mobile" style="background-color: #d7f5f7" readonly>("Band 5a@1" - "Band 4@1") / ("Band 5a@1" + "Band 4@1")</textarea></td> 
+                    <td class="text-center"><textarea class="custom-textbox stretch-on-mobile" style="background-color: #d7f5f7" readonly>("Band 5a@1" - "Band 4@1") / ("Band 5a@1" + "Band 4@1")</textarea></td> 
                   </tr>
                   <tr>
                     <td class="text-center">3</td>
