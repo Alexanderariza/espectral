@@ -407,6 +407,13 @@ plot.show(ndvi, cmap='Greens')</textarea></td>
               actualizado de las referencias, la cual podrá ser descargada en formato CSV. Pero el valor más importante es que el usuario podrá 
               copiar o descargar los códigos en los lenguajes comúnmente utilizados para su cálculo (Python, JavaScript o R), en software libre como
               QGIS, Rstudio y exportar la lista de literatura o las fórmulas en diferentes formatos.
+              
+              <dialog id="ms">
+              <p>¡Hola, soy un mensaje!</p>
+              <button id="close" onclick="document.getElementById('ms').close()">cerrar</button>
+              </dialog>
+              <a id="show" onclick="document.getElementById('ms').show()">NDVI</a>
+              
             </p>
             <div class="control-group">
               <button id="dialog-btn-1" class="custom-button-flat"><img src="img/setting.png"><span>Dialog 1</span></button>
