@@ -278,9 +278,9 @@
                     <td class="text-center">Índice Normalizado de Área Quemada</td>
                     <td class="text-center">780:1400 1400:3000</td>
                     <td class="text-center"><textarea class="custom-textbox stretch-on-mobile" style="background-color: #d7f5f7" readonly>("Band 8a@1" - "Band 11@1") / ("Band 8a@1" + "Band 11@1")</textarea></td> 
-                    <td class="text-center"><textarea class="custom-textbox stretch-on-mobile" readonly># calcule el NBR usando las bandas del nir (band 4) y swir (band 8) 
+                    <td class="text-center"><textarea class="custom-textbox stretch-on-mobile" style="background-color: #d7f5f7" readonly># calcule el NBR usando las bandas del nir (band 4) y swir (band 8) 
                         naip_nbr <-(naip_multispectral_br[[4]] - naip_multispectral_br[[8]]) / (naip_multispectral_br[[4]] + naip_multispectral_br[[8]])</textarea></td>
-                    <td class="text-center"><textarea class="custom-textbox stretch-on-mobile" readonly>#import required libraries
+                    <td class="text-center"><textarea class="custom-textbox stretch-on-mobile" style="background-color: #d7f5f7" readonly>#import required libraries
 import rasterio
 from rasterio import plot
 import matplotlib.pyplot as plt
@@ -337,7 +337,7 @@ ndviImage.close()
 #plot ndvi
 ndvi = rasterio.open('../Output/ndviImage.tiff')
 plot.show(ndvi, cmap='Greens')</textarea></td>
-                    <td class="text-center"><textarea class="custom-textbox stretch-on-mobile" readonly>// Calculo del índice NBR con las bandas NIR y SWIR :
+                    <td class="text-center"><textarea class="custom-textbox stretch-on-mobile" style="background-color: #d7f5f7" readonly>// Calculo del índice NBR con las bandas NIR y SWIR :
                         var NBR= imagen.normalizedDifference (['B8','B12']) ; 
                         Map.addLayer (NBR,{  max: 1.0, min: 0.0,
                         'palette': ['#7F0010', '#D99143', '#C04529', '#E02E20', '#EC6521', '#F6D53B']},
@@ -345,8 +345,8 @@ plot.show(ndvi, cmap='Greens')</textarea></td>
                    </tr>
                   <tr class="bg-color-light-gray">
                     <td class="text-center">2</td>
-                    <td class="text-center">798 (4.4%)</td>
-                    <td class="text-center">497 (5.4%)</td>
+                    <td class="text-center"><b>NDVI</b></td>
+                    <td class="text-center">Índice Normalizado de Vegetación</td>
                     <td class="text-center">665 (8.2%)</td>
                     <td class="text-center">497 (5.4%)</td>
                     <td class="text-center">665 (8.2%)</td>
