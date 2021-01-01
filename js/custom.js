@@ -15,7 +15,7 @@
     var $share_dialog = widgets.createCustomDialog({
       selector: "#share-dialog",
       full_width_button: true,
-      action_text: "Copy to clipboard",
+      action_text: "Copiar a portapapeles",
       close_dialog_on_action: false,
       show_cancel_btn: false,
       action_callback: function () {
@@ -109,7 +109,7 @@
     // Set custom dialog type 4
     var $dialog_4 = widgets.createCustomDialog({
       selector: "#dialog-4",
-      action_text: "Acción",
+      action_text: "Ir a Índices",
       reverse_button_positions: true,
       full_width_button: true,
       action_callback: function () {
