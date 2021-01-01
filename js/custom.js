@@ -109,13 +109,13 @@
     // Set custom dialog type 4
     var $dialog_4 = widgets.createCustomDialog({
       selector: "#dialog-4",
-      action_text: "Action",
+      action_text: "Acción",
       reverse_button_positions: true,
       full_width_button: true,
       action_callback: function () {
         console.log("action");
       },
-      cancel_text: "Back",
+      cancel_text: "Regresar",
       cancel_callback: function () {
         console.log("back");
       }
