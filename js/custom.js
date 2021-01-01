@@ -83,10 +83,10 @@
     var $dialog_2 = widgets.createCustomDialog({
       selector: "#dialog-2",
       action_callback: function () {
-        console.log("confirm");
+        console.log("confirmar");
       },
       cancel_callback: function () {
-        console.log("cancel");
+        console.log("cancelar");
       }
     });
     $("#dialog-btn-2").on("click", function () {
