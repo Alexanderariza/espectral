@@ -41,110 +41,7 @@
             <ul>
           </div>
 
-               <!--Start Text with Centered Image and Table-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <ul>
-            <h3>a) Consulta los índices por tipo de riesgo o desastre:</h3>
-            </ul>
-              <div class="control-group">
-              <div class="custom-dropdown stretch-on-mobile large">
-                <a tabindex="0" href="javascript:void(0)"><span>Selecciona el tipo de riesgo o desastre</span></a>
-                <div>
-                  <a href="#paso-1">Inundaciones</a>
-                  <a href="#paso-1">Huracanes</a>
-                  <a href="#paso-1">Sequía</a>
-                  <a href="#paso-1">Desertificación</a>
-                  <a href="#paso-1">Erosión</a>
-                  <a href="#paso-1">Salinización de los suelos</a>
-                  <a href="#paso-1">Incendios</a>
-                  <a href="#paso-1">Deslizamientos de tierra</a>
-                  <a href="#paso-1">Terremotos</a>
-                  <a href="#paso-1">Eropciones volcánicas</a>
-                  <a href="#paso-1">Tsunamis</a>
-                </div>
-               <div></div>
-              </div>              
-            <p class="text">
-              Los resultados se muestran en una tabla que contiene columnas con la información más relevante de cada índice espectral según el tipo de riesgo o desastre seleccionado. 
-              Al hacer clic en el nombre del índice / referencia, se muestra información adicional para ese elemento.
-            </p>
-            </div>      
-            <h3><p class="text text-center graph-title">
-              ÍNDICES ESPECTRALES APLICADOS A INCENDIOS FORESTALES
-            </p></h3>
-            <div class="custom-table-container center add-top-margin-small">
-              <table class="custom-table">
-                <thead>
-                  <tr class="bg-color-gray">
-                    <th class="text-center">ID</th>
-                    <th class="text-center">Acronimo</th>
-                    <th class="text-center">Nombre</th>
-                    <th class="text-center">Descripción</th>
-                    <th class="text-center">Formula</th>
-                    <th class="text-center">Referencias</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="text-center">1</td>
-                    <td class="text-center"><b>NBR</b></td>
-                    <td class="text-center">Índice Normalizado de Área Quemada</td>
-                    <td class="text-center">Identifica áreas quemadas de manera similar al (NDVI), empleando el infrarrojo cercano (NIR) y el infrarrojo de onda corta (SWIR)</td>
-                    <td class="text-center"><img class="image center" src="https://latex.codecogs.com/svg.latex?\frac%20{(NIR%20-%20SWIR)}{(NIR%20+%20SWIR)}" style="max-width: 300px;"></td>
-                    <td class="text-center"><a href="https://www.researchgate.net/publication/241688462_Landscape_Assessment_LA_Sampling_and_Analysis_Methods" style="color:red">(Key and Benson, 2006)</a></td>
-                  </tr>
-                  <tr class="bg-color-light-gray">
-                    <td class="text-center">2</td>
-                    <td class="text-center"><b>BAI</b></td>
-                    <td class="text-center">Índice de Área Quemada</td>
-                    <td class="text-center">Específicamente diseñado para la cartografía de áreas quemadas a partir de datos del sensor AVHRR</td>
-                    <td class="text-center">497 (5.4%)</td>
-                    <td class="text-center"><a href="https://digital.csic.es/bitstream/10261/6426/1/Martin_Isabel_Serie_Geografica.pdf" style="color:red">(Key and Benson, 2006)</a></td>
-                  </tr>
-                  <tr>
-                    <td class="text-center">3</td>
-                    <td class="text-center"><b>BAIM</b></td>
-                    <td class="text-center">Índice de Área Quemada para MODIS</td>
-                    <td class="text-center">Adaptación del BAI a las características del sensor MODIS</td>
-                    <td class="text-center">2,649 (28.8%)</td>
-                    <td class="text-center"><a href="https://www.researchgate.net/publication/248428333_Burnt_Area_Index_BAIM_for_burned_area_discrimination_at_regional_scale_using_MODIS_data" style="color:red">(Martín et al., 2005)</a></td>
-                  </tr>
-                  <tr class="bg-color-light-gray">
-                    <td class="text-center">4</td>
-                    <td class="text-center"><b>MIRBI</b></td>
-                    <td class="text-center">Índice de Área Quemada de Infrarrojo Medio</td>
-                    <td class="text-center">Diseñado para la cartografía de áreas quemadas a partir de imágenes procedentes del sensor MODIS</td>
-                    <td class="text-center">2,932 (31.9%)</td>
-                    <td class="text-center"><a href="https://www.researchgate.net/publication/253873224_An_evaluation_of_diVerent_bi-spectral_spaces_for_discriminating_burned_shrub-savannah" style="color:red">(Trigg y Flasse, 2001)</a></td>
-                  </tr>
-                  <tr>
-                    <td class="text-center">5</td>
-                    <td class="text-center"><b>GEMI</b></td>
-                    <td class="text-center">Índice Global de Monitoreo Ambiental</td>
-                    <td class="text-center">Permite reducir la influencia de los efectos atmosféricos lo máximo posible</td>
-                    <td class="text-center">1,918 (20.9%)</td>
-                    <td class="text-center"><a href="https://www.researchgate.net/publication/226985098_GEMI_A_non-linear_index_to_monitor_global_vegetation_from_satellites" style="color:red">(Pinty y Verstraete, 1992)</a></td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <tr>
-                    <td class="text-center">6</td>
-                    <td class="text-center"><b>NDVI</b></td>
-                    <td class="text-center">Índice Normalizado de Vegetación</td>
-                    <td class="text-center">Utilizado como indicador del vigor de la biomasa vegetal</td>
-                    <td class="text-center">9,195</td>
-                   <td class="text-center"><a href="https://ui.adsabs.harvard.edu/abs/1974NASSP.351..309R/abstract" style="color:red">(Rouse et al., 1974)</a></td>
-                  </tr>
-                </tfoot>
-              </table>
-            </div>
-            <p class="text">
-              Al hacer clic en el link de la referencia, se abrirá una nueva ventana con información adicional del autor.
-            </p>
-          </div>
-        <!--End Text with Centered Image and Table-->
-            
+          
             
       </div>
     </div>
@@ -153,7 +50,33 @@
 
 <!-------------------------------------------------------------------------------------------->       
 
-    
+    <!-------------------------------------------------------------------------------------------->
+          <div class="flex-row">
+          <div class="flex-item flex-column">
+            <ul>
+            <h3 class="add-top-margin">b) Consulta los índices para el tipo sensor satelital:</h3>
+            </ul>
+            <div class="control-group">
+              <div class="custom-dropdown stretch-on-mobile large">
+                <a tabindex="0" href="javascript:void(0)"><span>Selecciona el tipo de Sensor..</span></a>
+                <div>
+                  <a href="#paso-1">Landsat 8</a>
+                  <a href="#paso-1">MODIS</a>
+                  <a href="#paso-1">Sentinel 2</a>
+                  <a href="#paso-1">Sentinel 3</a>
+                  <a href="#paso-1">Sentinel 5</a>
+                  <a href="#paso-1">WorldView 3</a>
+                </div>
+              </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+            <p class="text">
+                Selecciona de la lista el tipo de sensor satelital. A continuación apareceran ordenados cada uno
+                de los índices disponibles, los resultados se muestran en una tabla que contiene columnas con la información más importante.
+                </p>
+        <!-------------------------------------------------------------------------------------------->
 
 <!-------------------------------------------------------------------------------------------->        
 
