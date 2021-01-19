@@ -160,12 +160,12 @@ fillOpacity: 0.7
 }
 
 //este código usa la funcionalidad popup de Leaflet, comprueba que la parte propierties del GeoJSON existe, así como la propiedad del campo DN, y La función layer.bindPopup construye la funcionalidad de clic en el mapa.
-	function popup(feature, layer) { 
-if (feature.properties && feature.properties.DN) 
-{ 
-layer.bindPopup(feature.properties.DN); 
-} 
-}
+	function popup(feature, layer) {
+		if (feature.properties && feature.properties.fid)
+			{
+				layer.bindPopup(feature.properties.fid);
+				}
+		}
 	 // esta función que crea las ventanas emergentes. onEachFeature es una propiedad de L.geoJson que se puede pasar con una función:
 	 geojson = L.geoJson(countries, { 
  style: style, onEachFeature: popup 
