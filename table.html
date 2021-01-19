@@ -130,7 +130,7 @@
  <script>
 var map = L.map('map').
 setView([13.950393, -87.157513], 
-13);
+11);
  
 L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
@@ -167,7 +167,7 @@ layer.bindPopup(feature.properties.fid);
 }
 }
 // esta función que crea las ventanas emergentes. onEachFeature es una propiedad de L.geoJson que se puede pasar con una función:
-//geojson = 
+var geojson = 
 	L.geoJson(countries, { style: style, onEachFeature: popup }).addTo(map);
 
 	 
