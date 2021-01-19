@@ -65,13 +65,7 @@
   height: 300px; }
  </style>
 	<script type="text/javascript" src="countries.js"></script>
-
-	<script src='http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet-src.js'></script>
-	<script src="https://code.jquery.com/jquery-2.2.3.js"></script>
-
-
-	<link href='http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css' rel='stylesheet' />
-	
+		
 </head>
 <body>
 
@@ -210,10 +204,6 @@ var barriosdera = L.geoJson(countries, {style: style,
     onEachFeature: popup
 });
 
-$.getJSON("countries.geojson", function (data) {
-
-	barriosdera.addData(data);
-});	
 	barriosdera.addTo(map);
 	
 </script>	
