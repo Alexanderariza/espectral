@@ -210,7 +210,7 @@ var barriosdera = L.geoJson(countries, {style: style,
     onEachFeature: popup
 });
 
-$.getJSON("countries.js", function (data) {
+$.getJSON("countries.geojson", function (data) {
 
 	barriosdera.addData(data);
 });	
