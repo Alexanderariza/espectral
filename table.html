@@ -136,6 +136,8 @@ L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
     maxZoom: 18
 }).addTo(map);
+
+//funcion para dar color a la variable d
 	 function getColor(d) {
 return d > 4 ? '#FF0000' : 
 d > 3 ? '#FF8000' : 
@@ -143,7 +145,8 @@ d > 2 ? '#FFFF00' :
 d > 1 ? '#00FF00' : 
 '#FFEDA0'; 
 }
-	 
+
+//funcion de caracteristicas de los vectores de la capa GeoJSON de manera que fillColor dependerá de la propiedad feature.properties.DN	y También ajustaremos la apariencia y añadimos un borde blanco con puntos discontinuos. 
 	 function style(feature) { 
 return { 
 fillColor: getColor(
@@ -151,10 +154,26 @@ feature.properties.DN),
 weight: 2, 
 opacity: 1, 
 color: 'white', 
-dashArray: '3', 
+//dashArray: '3', 
 fillOpacity: 0.7 
 }; 
 }
+
+//este código usa la funcionalidad popup de Leaflet, comprueba que la parte propierties del GeoJSON existe, así como la propiedad del campo DN, y La función layer.bindPopup construye la funcionalidad de clic en el mapa.
+function popup(feature, layer) { 
+if (feature.properties && feature.properties.DN) 
+{ 
+layer.bindPopup(feature.properties.DN); 
+} 
+}
+
+// esta función que crea las ventanas emergentes. onEachFeature es una propiedad de L.geoJson que se puede pasar con una función:
+geojson = L.geoJson(countries, { 
+ style: style, onEachFeature: popup 
+}) 
+.addTo(map);
+	 
+//Ahora añadimos las capas:	 
 	 L.geoJson(countries, { style: style }).addTo(map);
 	 L.control.scale().addTo(map);
 	 L.marker([13.950393, -87.157513], {draggable: true}).addTo(map);
