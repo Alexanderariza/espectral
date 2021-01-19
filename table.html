@@ -62,7 +62,7 @@
  <style>
   #map { 
   widh: 50px;
-  height: 300px; }
+  height: 150px; }
  </style>
 	<script type="text/javascript" src="countries.js"></script>
 
@@ -195,9 +195,9 @@ fillOpacity: 0.7
 
 <script>
 function popup(feature, layer) { 
-    if (feature.properties && feature.properties.fid) 
+    if (feature.properties && feature.properties.DN) 
     { 
-        layer.bindPopup( "<strong>" + feature.properties.fid); 
+        layer.bindPopup( "<strong>" + feature.properties.DN + "</strong><br/>" + feature.properties.fid); 
     } 
 }
 
