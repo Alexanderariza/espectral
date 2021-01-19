@@ -204,6 +204,11 @@ function popup(feature, layer) {
 var barriosdera = L.geoJson(countries, {style: style,
     onEachFeature: popup
 });
+
+$.getJSON("countries.js", function (data) {
+
+	barriosdera.addData(data);
+});	
 	barriosdera.addTo(map);
 	
 </script>	
