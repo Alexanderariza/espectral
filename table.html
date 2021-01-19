@@ -130,7 +130,7 @@
  <script>
 var map = L.map('map').
 setView([13.950393, -87.157513], 
-14);
+13);
  
 L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
@@ -161,16 +161,14 @@ fillOpacity: 0.7
 
 //este código usa la funcionalidad popup de Leaflet, comprueba que la parte propierties del GeoJSON existe, así como la propiedad del campo DN, y La función layer.bindPopup construye la funcionalidad de clic en el mapa.
 	function popup(feature, layer) {
-		if (feature.properties && feature.properties.fid)
-			{
-				layer.bindPopup(feature.properties.fid);
-				}
-		}
-	 // esta función que crea las ventanas emergentes. onEachFeature es una propiedad de L.geoJson que se puede pasar con una función:
-	 geojson = L.geoJson(countries, { 
- style: style, onEachFeature: popup 
-}) 
-.addTo(map);
+if (feature.properties && feature.properties.fid)
+{
+layer.bindPopup(feature.properties.fid);
+}
+}
+// esta función que crea las ventanas emergentes. onEachFeature es una propiedad de L.geoJson que se puede pasar con una función:
+//geojson = 
+	L.geoJson(countries, { style: style, onEachFeature: popup }).addTo(map);
 
 	 
 //Ahora añadimos las capas:	 
