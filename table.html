@@ -136,18 +136,18 @@ L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
     maxZoom: 18
 }).addTo(map);
-	 function getColor(DN) {
-return DN = 4 ? '#FF0000' : 
-DN = 3 ? '#FF8000' : 
-DN = 2 ? '#FFFF00' : 
-DN = 1 ? '#00FF00' : 
+	 function getColor(d) {
+return d = 4 ? '#FF0000' : 
+d = 3 ? '#FF8000' : 
+d = 2 ? '#FFFF00' : 
+d = 1 ? '#00FF00' : 
 '#FFEDA0'; 
 }
 	 
 	 function style(feature) { 
 return { 
 fillColor: getColor(
-feature.properties.POP_EST), 
+feature.properties.ND), 
 weight: 2, 
 opacity: 1, 
 color: 'white', 
