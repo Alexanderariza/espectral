@@ -170,7 +170,7 @@ layer.bindPopup(feature.properties.DN);
 	 
 // esta función que crea las ventanas emergentes. onEachFeature es una propiedad de L.geoJson que se puede pasar con una función:
 	
-L.geojson(countries, { style: style, onEachFeature: popup }).addTo(map);
+geojson = L.geojson(countries, { style: style, onEachFeature: popup }).addTo(map);
 
 	 
 //Ahora añadimos las capas:	 
