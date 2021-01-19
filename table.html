@@ -140,10 +140,10 @@ L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 //funcion para dar color a la variable d
 	 function getColor(d) {
 return d > 4 ? '#FF0000' : 
-d > 3 ? '#FF8000' : 
-d > 2 ? '#FFFF00' : 
-d > 1 ? '#00FF00' : 
-'#FFEDA0'; 
+d > 3 ? '#FF0000' : 
+d > 2 ? '#FF8000' : 
+d > 1 ? '#FFFF00' : 
+'#00FF00'; 
 }
 
 //funcion de caracteristicas de los vectores de la capa GeoJSON de manera que fillColor dependerá de la propiedad feature.properties.DN	y También ajustaremos la apariencia y añadimos un borde blanco con puntos discontinuos. 
@@ -153,7 +153,7 @@ fillColor: getColor(
 feature.properties.DN), 
 weight: 2, 
 opacity: 1, 
-color: 'white', 
+color: 'black', 
 //dashArray: '3', 
 fillOpacity: 0.7 
 }; 
