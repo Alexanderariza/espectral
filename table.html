@@ -165,7 +165,21 @@ fillOpacity: 0.7
 	 L.control.scale().addTo(map);
 	 L.marker([13.950393, -87.157513], {draggable: true}).addTo(map);
 </script>
+
+<script>
+function popup(feature, layer) { 
+    if (feature.properties && feature.properties.ND) 
+    { 
+        layer.bindPopup( "<strong>" + feature.properties.ND); 
+    } 
+}
+
+var barriosdera = L.geoJson(countries, {
+    onEachFeature: popup
+});
+	barriosdera.addTo(map);
 	
+</script>	
 
 	
 
