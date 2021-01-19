@@ -137,10 +137,10 @@ L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 18
 }).addTo(map);
 	 function getColor(d) {
-return d = 4 ? '#FF0000' : 
-d = 3 ? '#FF8000' : 
-d = 2 ? '#FFFF00' : 
-d = 1 ? '#00FF00' : 
+return d > 4 ? '#FF0000' : 
+d > 3 ? '#FF8000' : 
+d > 2 ? '#FFFF00' : 
+d > 1 ? '#00FF00' : 
 '#FFEDA0'; 
 }
 	 
