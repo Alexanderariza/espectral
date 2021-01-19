@@ -166,25 +166,7 @@ if (feature.properties && feature.properties.DN)
 layer.bindPopup(feature.properties.DN);
 }
 }
-/*	 
-function popup(feature, layer) { 
-    if (feature.properties && feature.properties.DN) 
-    { 
-        layer.bindPopup( "<strong>" + feature.properties.DN + "</strong><br/>" + feature.properties.fid); 
-    } 
-}
 
-var barriosdera = L.geoJson(countries, {
-    onEachFeature: popup
-});
-
-$.getJSON("countries", function (data) {
-
-	barriosdera.addData(data);
-});
-
-barriosdera.addTo(map);	 
-*/	 
 	 
 // esta función que crea las ventanas emergentes. onEachFeature es una propiedad de L.geoJson que se puede pasar con una función:
 	
